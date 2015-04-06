@@ -1,0 +1,137 @@
+/*****************************************************************************
+  Week 7 Assignment
+******************************************************************************/
+
+// $visual-grid: true;
+// $visual-grid-color: tomato;
+
+@import '../../bower_components/bourbon/dist/_bourbon.scss';
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+$small: new-breakpoint(min-width 680px max-width 949px);
+$medium: new-breakpoint(min-width 950px max-width 1199px);
+$large: new-breakpoint(min-width 1200px);
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+img {
+	max-width: 100%;
+}
+
+
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+.list-unstyled {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.menu {
+	@extend .list-unstyled;
+
+	& > li {
+		padding: 0.5em;
+		background-color: #ccc;
+		color: white;
+		border-bottom: 1px solid white;
+	}
+}
+
+.site-menu,
+main,
+footer {
+	@include outer-container;
+}
+
+.side-menu {
+		display:none;
+	@include media($medium) {
+		@include span-columns(3);
+		@include omega(3n);
+	}
+	@include media($large) {
+		@include span-columns(3);
+		@include omega(3n);
+	}
+}
+
+.site-menu {
+	@include media($medium) {
+		display: none;
+	}
+	@include media($large) {
+		display: none;
+	}
+}
+
+.menu {
+	@include media($small) {
+		@include span-columns(12)
+	}
+}
+.menu li {
+	@include media($small) {
+		@include span-columns (2.4)
+	}
+}
+
+.product-listing {
+	@include media($medium) {
+		@include span-columns(9);
+	}
+	@include media($large) {
+		@include span-columns(9);
+	}
+}
+
+nav {
+	text-align: center;
+}
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+.site-branding {
+	text-align: center;
+	background-color: black;
+}
+
+.site-title,
+.intro {
+	display: none;
+}
+
+
+.intro {
+	display: none;
+}
+
+.product-listing {
+	@extend .list-unstyled;
+}
+
+.product {
+	margin: 1.5em 0;
+	padding: .5em;
+
+	@include media($small) {
+		@include span-columns(6);
+		@include omega(2n);
+	}
+	@include media($medium) {
+		@include span-columns(3 of 9);
+		@include omega(3n);
+	}
+	@include media($large) {
+		@include span-columns(3 of 9);
+		@include omega(3n);
+	}
+
+}
+
+
+
