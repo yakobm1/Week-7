@@ -1,0 +1,162 @@
+/*****************************************************************************
+  Week 7 Assignment
+******************************************************************************/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+img {
+  max-width: 100%; }
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+.list-unstyled, .menu, .product-listing {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.menu > li {
+  padding: 0.5em;
+  background-color: #ccc;
+  color: white;
+  border-bottom: 1px solid white; }
+
+.site-menu, main, footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .site-menu:after, main:after, footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.side-menu {
+  display: none; }
+  @media screen and (min-width: 950px) and (max-width: 1199px)  {
+    .side-menu {
+      float: left;
+      display: block;
+      margin-right: 2.1276595745%;
+      width: 23.4042553191%; }
+      .side-menu:last-child {
+        margin-right: 0; }
+      .side-menu:nth-child(3n) {
+        margin-right: 0; }
+      .side-menu:nth-child(3n+1) {
+        clear: left; } }
+  @media screen and (min-width: 1200px)  {
+    .side-menu {
+      float: left;
+      display: block;
+      margin-right: 2.1276595745%;
+      width: 23.4042553191%; }
+      .side-menu:last-child {
+        margin-right: 0; }
+      .side-menu:nth-child(3n) {
+        margin-right: 0; }
+      .side-menu:nth-child(3n+1) {
+        clear: left; } }
+
+@media screen and (min-width: 950px) and (max-width: 1199px)  {
+  .site-menu {
+    display: none; } }
+@media screen and (min-width: 1200px)  {
+  .site-menu {
+    display: none; } }
+
+@media screen and (min-width: 680px) and (max-width: 949px)  {
+  .menu {
+    float: left;
+    display: block;
+    margin-right: 2.1276595745%;
+    width: 100%; }
+    .menu:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 680px) and (max-width: 949px)  {
+  .menu li {
+    float: left;
+    display: block;
+    margin-right: 2.1276595745%;
+    width: 18.2978723404%; }
+    .menu li:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 950px) and (max-width: 1199px)  {
+  .product-listing {
+    float: left;
+    display: block;
+    margin-right: 2.1276595745%;
+    width: 74.4680851064%; }
+    .product-listing:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 1200px)  {
+  .product-listing {
+    float: left;
+    display: block;
+    margin-right: 2.1276595745%;
+    width: 74.4680851064%; }
+    .product-listing:last-child {
+      margin-right: 0; } }
+
+nav {
+  text-align: center; }
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+.site-branding {
+  text-align: center;
+  background-color: black; }
+
+.site-title, .intro {
+  display: none; }
+
+.intro {
+  display: none; }
+
+.product {
+  margin: 1.5em 0;
+  padding: 0.5em; }
+  @media screen and (min-width: 680px) and (max-width: 949px)  {
+    .product {
+      float: left;
+      display: block;
+      margin-right: 2.1276595745%;
+      width: 48.9361702128%; }
+      .product:last-child {
+        margin-right: 0; }
+      .product:nth-child(2n) {
+        margin-right: 0; }
+      .product:nth-child(2n+1) {
+        clear: left; } }
+  @media screen and (min-width: 950px) and (max-width: 1199px)  {
+    .product {
+      float: left;
+      display: block;
+      margin-right: 2.8571428571%;
+      width: 31.4285714286%; }
+      .product:last-child {
+        margin-right: 0; }
+      .product:nth-child(3n) {
+        margin-right: 0; }
+      .product:nth-child(3n+1) {
+        clear: left; } }
+  @media screen and (min-width: 1200px)  {
+    .product {
+      float: left;
+      display: block;
+      margin-right: 2.8571428571%;
+      width: 31.4285714286%; }
+      .product:last-child {
+        margin-right: 0; }
+      .product:nth-child(3n) {
+        margin-right: 0; }
+      .product:nth-child(3n+1) {
+        clear: left; } }
